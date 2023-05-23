@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <title>Google Keep</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <h1>Google Keep</h1>
+        <div class="search">
+          <i class="fas fa-search" id="search"></i>
+          <input type="text" id="searchNotes" placeholder="Search" />
+        </div>
+        <div class="icons-header">
+          <i class="fas fa-refresh"></i>
+          <i class="fas fa-list"></i>
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-user"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="input-box">
+        <div class="textul">
+          <input type="text" id="addTitle" placeholder="Title" />
+        </div>
+        <textarea id="addText" placeholder="Take a note..."></textarea>
+        <div class="button">
+          <i class="fas fa-square-check" id="check"></i>
+          <input type="color" id="color-change" value="#202124" />
+          <input type="file" id="image" accept="image/*" />
+          <button id="button">Add a note</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="container-notes"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
